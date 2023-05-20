@@ -16,7 +16,7 @@ nav {
 }
 .menu__list {
     list-style: none;
-    text-align: center;
+    text-align: left;
 }
 .menu__item {
     display: inline-block;
@@ -25,9 +25,8 @@ nav {
 .menu__link {
     text-decoration: none;
     color: #292929;
-    /* text-transform: uppercase; */
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     transition: .3s all;
     display: inline-block;
     
@@ -44,6 +43,24 @@ nav {
     padding: 40px 0 30px 0;
 }
 
+.header__img {
+    width: 25%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.logo_img {
+    border-radius: 100%;
+    border: #F2F2F2 1.5px solid;
+    box-shadow: 6px 4px 4px #ccc;
+    cursor: pointer;
+}
+
+.logo_img:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 4px 4px #ccc;
+    transition: .7s all
+}
 .header__text {
     margin-bottom: 10px;
 }
@@ -59,25 +76,39 @@ nav {
 }
 
 .products__card {
-    
+    width: 310px;
+    box-shadow: 8px 4px 4px #ccc;
+    border-radius: 8px;
+    border: #F2F2F2 1.5px solid;
+}
+
+.products__card:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 4px 4px #ccc;
+    transition: .7s all
 }
 
 .products__img {
-    width: 310px;
+    width: 100%;
     margin-bottom: 15px;
     cursor: pointer;
-    transition: .7s all;
-}
-.products__img:hover {
-    transform: scale(1.05);
 }
 
 .products__name {
     margin-bottom: 8px;
+    padding-left: 8px;
+    font-weight: 400;
 }
 .products__descr {
     margin-bottom: 8px;
+    padding-left: 8px;
+    font-weight: 300;
 }
+
+.products__price {
+    padding-left: 8px;
+}
+
 span {
     color: #F20C0C;
     font-size: 24px;
