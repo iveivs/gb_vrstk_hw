@@ -163,14 +163,17 @@
   z-index: 10;
 }
 .solution__info {
-  width: 500px;
+  width: 515px;
+}
+.solution__info .title {
+  font-size: 45px;
 }
 .solution__img {
-  width: 780px;
+  width: 765px;
 }
 .solution__ellipse {
   width: 720px;
-  height: 438px;
+  height: 388px;
   position: absolute;
   border: 0.5px #666666 solid;
   border-radius: 50%;
