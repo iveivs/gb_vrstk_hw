@@ -39,7 +39,7 @@
 
 .title {
   margin-bottom: 17px;
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 800;
 }
 .title span {
@@ -51,7 +51,6 @@
 .subtitle {
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 37px;
   color: #888888;
 }
 
@@ -97,9 +96,12 @@
   color: #000000;
   font-size: 14px;
   font-weight: regular;
+  display: inline-block;
+  transition: 0.4s;
 }
 .header__link:hover {
   color: #F25822;
+  transform: scale(1.2);
 }
 .header__link:first-child {
   color: #F25822;
@@ -125,8 +127,15 @@
   height: 50px;
 }
 .top__wrapper {
+  flex-wrap: wrap;
   margin-top: 120px;
   width: 543px;
+}
+.top .subtitle {
+  margin-bottom: 37px;
+}
+.top .title {
+  font-size: 60px;
 }
 
 .buttons {
@@ -145,6 +154,7 @@
   padding: 60px 0px 90px 0px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .logos img:not(:last-child) {
   margin-right: 48px;
@@ -161,6 +171,9 @@
   flex-wrap: wrap;
   align-items: center;
   z-index: 10;
+}
+.solution .subtitle {
+  margin-bottom: 37px;
 }
 .solution__info {
   margin-right: 20px;
@@ -184,9 +197,6 @@
   z-index: -1;
 }
 
-.offers {
-  min-height: 491px;
-}
 .offers__wrapper {
   margin: 100px 0px 100px 0px;
   display: flex;
@@ -196,7 +206,8 @@
 .offers__item {
   width: 310px;
   border-radius: 8px;
-  transition: 0.5s;
+  transition: 0.3s;
+  padding: 40px 10px 25px 20px;
 }
 .offers__item_square1 {
   margin-bottom: 20px;
@@ -226,12 +237,27 @@
   border-radius: 15px;
 }
 .offers__item:hover {
-  box-shadow: 14px 4px 4px #cccccc;
+  box-shadow: 14px 14px 14px 10px #cccccc;
+  transform: scale(1.01);
 }
 .offers__img {
   margin-bottom: 10px;
   position: relative;
   top: 22px;
+}
+.offers h2 {
+  margin-bottom: 17px;
+}
+.offers .subtitle {
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+.offers__read-more {
+  font-size: 12px;
+  font-weight: 700;
+}
+.offers__read-more a {
+  color: #000;
 }
 
 .opacity {
@@ -242,4 +268,151 @@
   background: white;
   opacity: 0.7;
   z-index: 0;
+}
+
+.choose {
+  padding: 92px 0 100px 0;
+  background: #FAFAFA;
+}
+.choose .title {
+  text-align: center;
+  font-size: 45px;
+}
+.choose .subtitle {
+  text-align: center;
+  margin-bottom: 55px;
+}
+.choose__content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.choose__item {
+  width: 370px;
+  background: #fff;
+  padding-bottom: 45px;
+  transition: 0.4s;
+}
+.choose__item:hover {
+  box-shadow: 14px 14px 14px 10px #cccccc;
+  transform: scale(1.01);
+}
+.choose__title {
+  padding-top: 25px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.choose__subtitle {
+  padding: 22px 10px 0px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  color: #888888;
+}
+.choose__btn {
+  margin: 0 auto;
+  margin-top: 39px;
+  display: block;
+}
+
+.you {
+  padding-top: 80px;
+  display: flex;
+  justify-content: right;
+}
+.you .title {
+  font-size: 45px;
+}
+.you .subtitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+.you__info {
+  width: 600px;
+}
+.you__box-items {
+  width: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+  padding-left: 20px;
+}
+.you__circle {
+  min-width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: #FCD5C8;
+  border-radius: 50%;
+  padding-top: 30px;
+  margin-right: 15px;
+}
+.you__circle_2 {
+  background: #BDE0BC;
+}
+.you__circle_3 {
+  background: #FFF3C9;
+}
+.you__item {
+  padding: 15px;
+  display: flex;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.you__item_title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.you__item-text {
+  font-size: 14px;
+}
+.you__item:hover {
+  box-shadow: 14px 14px 14px 10px #cccccc;
+  transform: scale(1.01);
+  background-color: #fff;
+}
+.you__text-box {
+  padding: 6px;
+}
+
+.numbers {
+  padding-top: 100px;
+}
+.numbers__content {
+  padding: 43px 76px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px #EEEEEE solid;
+  color: #666666;
+  margin-bottom: 100px;
+}
+.numbers__circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.numbers__circle_1 {
+  background-color: #F3602D;
+}
+.numbers__circle_2 {
+  background-color: #149211;
+}
+.numbers__circle_3 {
+  background-color: #FFC700;
+}
+.numbers__title {
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.check__content {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
