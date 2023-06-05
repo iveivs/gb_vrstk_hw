@@ -22,7 +22,7 @@
     font-family: "Gilroy"
     src: url('../font/Gilroy-Light.woff')
     font-style: normal
-    font-weight: light
+    font-weight: Light
 
 *
     font-family: 'Gilroy', sans-serif
@@ -114,6 +114,7 @@
         margin-bottom: 37px
     .title
         font-size: 60px
+        font-weight: bold
 
 .buttons
     display: flex
@@ -155,7 +156,7 @@
         width: 715px
     &__ellipse
         width: 720px
-        height: 388px
+        height: 188px
         position: absolute
         border: .5px #666666 solid
         border-radius: 50%
@@ -277,8 +278,6 @@
     .subtitle
         font-size: 16px
         font-weight: 700
-    // &__img
-    //     width: 700px
     &__info
         width: 600px
     &__box-items
@@ -316,8 +315,6 @@
     &__item:hover
         box-shadow: 14px 14px 14px 10px #cccccc
         transform: scale(1.01)
-        background-color: #fff
-        
     &__text-box
         padding: 6px
 
@@ -325,7 +322,6 @@
     padding-top: 100px
 
     &__content
-        // min-height: 
         padding: 43px 76px
         display: flex
         justify-content: space-around
@@ -350,12 +346,95 @@
         text-align: center
         
 .check
+    min-height: 558px
     &__content
         display: flex
         align-items: center
-    &
+        flex-wrap: wrap
+    &__item
+        width: 567px
+    &__input
+        width: 190px
+        height: 55px
+        background-color: #E1E1E1
+        padding-left: 20px
+        &_left
+            border-top-left-radius: 30px
+            border-bottom-left-radius: 30px
+            border-right: 1.5px #CCCCCC solid
+        &_right
+            border-top-right-radius: 30px
+            border-bottom-right-radius: 30px
+    .btn
+        height: 55px
+        width: 155px
+        margin-left: 30px
+
+    img
+        width: 700px
+    &__form
+        margin-top: 55px
+        display: flex
+        // justify-content: space-between
+
+.plans
+    background: #FAFAFA
+    padding-top: 83px
+    padding-bottom: 130px
+    .title
+        text-align: center
+    .subtitle
+        text-align: center
+        margin-bottom: 56px
+    &__content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__item
+        padding-top: 60px
+        width: 370px
+        text-align: center
+    &__item:hover
+        box-shadow: 14px 14px 14px 10px #cccccc
+        transform: scale(1.01)
+        .plans__title
+            color: #F25822
+    &__title
+        margin-bottom: 16px
+        font-size: 24px
+        font-weight: 500
+    &__price
+        height: 120px
+        position: relative
+        
+    &__span2
+        font-size: 70px
+        margin-left: 20px
+        font-weight: 700
+    &__span1
+        position: absolute
+        font-size: 24px
+        top: 14px
+    &__text
+        line-height: 40px
+        margin-bottom: 27px
+        color: #666666
+        font-size: 16px
+    .btn
+        width: 200px
+        height: 50px
+        background-color: #FCD5C8
+        color: #F25822
+        margin-bottom: 70px
+    .btn:hover
+        background-color: #F25822
+        color: #fff
+    
 
     
+        
+        
+
 
     
 

@@ -26,7 +26,7 @@
   font-family: "Gilroy";
   src: url("../font/Gilroy-Light.woff");
   font-style: normal;
-  font-weight: light;
+  font-weight: Light;
 }
 * {
   font-family: "Gilroy", sans-serif;
@@ -136,6 +136,7 @@
 }
 .top .title {
   font-size: 60px;
+  font-weight: bold;
 }
 
 .buttons {
@@ -187,7 +188,7 @@
 }
 .solution__ellipse {
   width: 720px;
-  height: 388px;
+  height: 188px;
   position: absolute;
   border: 0.5px #666666 solid;
   border-radius: 50%;
@@ -373,7 +374,6 @@
 .you__item:hover {
   box-shadow: 14px 14px 14px 10px #cccccc;
   transform: scale(1.01);
-  background-color: #fff;
 }
 .you__text-box {
   padding: 6px;
@@ -412,7 +412,107 @@
   text-align: center;
 }
 
+.check {
+  min-height: 558px;
+}
 .check__content {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+.check__item {
+  width: 567px;
+}
+.check__input {
+  width: 190px;
+  height: 55px;
+  background-color: #E1E1E1;
+  padding-left: 20px;
+}
+.check__input_left {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-right: 1.5px #CCCCCC solid;
+}
+.check__input_right {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.check .btn {
+  height: 55px;
+  width: 155px;
+  margin-left: 30px;
+}
+.check img {
+  width: 700px;
+}
+.check__form {
+  margin-top: 55px;
+  display: flex;
+}
+
+.plans {
+  background: #FAFAFA;
+  padding-top: 83px;
+  padding-bottom: 130px;
+}
+.plans .title {
+  text-align: center;
+}
+.plans .subtitle {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.plans__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.plans__item {
+  padding-top: 60px;
+  width: 370px;
+  text-align: center;
+}
+.plans__item:hover {
+  box-shadow: 14px 14px 14px 10px #cccccc;
+  transform: scale(1.01);
+}
+.plans__item:hover .plans__title {
+  color: #F25822;
+}
+.plans__title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.plans__price {
+  height: 120px;
+  position: relative;
+}
+.plans__span2 {
+  font-size: 70px;
+  margin-left: 20px;
+  font-weight: 700;
+}
+.plans__span1 {
+  position: absolute;
+  font-size: 24px;
+  top: 14px;
+}
+.plans__text {
+  line-height: 40px;
+  margin-bottom: 27px;
+  color: #666666;
+  font-size: 16px;
+}
+.plans .btn {
+  width: 200px;
+  height: 50px;
+  background-color: #FCD5C8;
+  color: #F25822;
+  margin-bottom: 70px;
+}
+.plans .btn:hover {
+  background-color: #F25822;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
