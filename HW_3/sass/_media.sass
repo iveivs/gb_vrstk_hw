@@ -1,0 +1,370 @@
+// @media (max-width: 1280px)
+//     .center
+//         padding-left: calc(50% - 660px)
+//         padding-right: calc(50% - 660px)
+@media (max-width: 1140px)
+    .center
+        padding-left: calc(50% - 490px)
+        padding-right: calc(50% - 490px)
+
+    .top
+        &__content
+            flex-wrap: nowrap
+        .title
+            font-size: 42px
+    .logos
+        padding-top: 30px
+        img
+            width: 12%
+    .solution
+        padding-top: 15px
+        padding-bottom: 15px
+        &__content
+            flex-wrap: nowrap
+            img
+                width: 50%
+        &__ellipse
+            width: 620px
+            height: 340px
+            left: -50px
+            transform: rotate(15deg)
+    .choose
+        &__item
+            width: 31%
+            
+    .you
+        &__info
+            width: 660px
+            // margin-right: 20px
+        &__box-items
+            width: 480px
+        &__circle
+            min-width: 80px
+            height: 80px
+            padding-top: 10px
+        &__item
+            margin-bottom: 20px
+        &__img
+            width: 800px
+    .check
+        img
+            width: 540px
+        &__item
+            width: 520px
+    
+
+                
+@media (max-width: 991px)
+    .center
+        padding-left: calc(50% - 460px)
+        padding-right: calc(50% - 460px)
+    .numbers
+        padding-top: 60px
+    .plans
+        padding-top: 44px
+        padding-bottom: 70px
+        &__item
+            padding-top: 20px
+        .btn
+            margin-bottom: 50px
+        &__text
+            line-height: 30px
+        &__price
+            height: 90px
+    .subtitle
+        margin-bottom: 26px
+    .check
+        img
+            width: 440px
+        &__item
+            width: 520px
+        &__input
+            width: 140px
+        
+
+@media (max-width: 767px)
+    .btn
+        &__white
+            width: 145px
+            height: 40px
+    .center
+        padding-left: calc(50% - 350px)
+        padding-right: calc(50% - 350px)
+    .logos
+        padding: 10px 0px 30px 0px
+    // .logos:nth-of-type(5)
+    //     display: none
+    .top
+        &__content
+            .btn
+                width: 110px
+                height: 40px
+        &__wrapper
+            margin-top: 40px
+        .header
+            padding-top: 15px
+        .menu-btn
+            display: block
+        .menu
+            display: block
+        header
+            display: flex
+            justify-content: flex-end
+        .menu-btn
+            width: 30px
+            height: 30px
+            position: relative
+            z-index: 2
+            overflow: hidden
+            span
+                width: 30px
+                height: 2px
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                background-color: #F25822
+                transition: all 0.5s
+                &:nth-of-type(2)
+                    top: calc(50% - 5px)
+
+                &:nth-of-type(3)
+                    top: calc(50% + 5px)
+
+        .menu
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            padding: 15px
+            font-size: 28px
+            font-weight: 700
+            line-height: 44px
+            letter-spacing: 4px
+            
+            opacity: 90%
+            // background: #FFEFBA
+            background: #fff
+            transform: translateX(-100%)
+            transition: transform 0.5s
+            &.active
+                transform: translateX(0)
+        ul
+            padding-top: 30%
+            
+        li
+            list-style-type: none
+            text-align: center
+            transition: .5s
+            a
+                color: #F25822
+        li:hover
+            transform: scale(1.2)
+            filter: brightness(120%)
+        .menu-btn.active span
+            &:nth-of-type(1)
+                display: none
+
+            &:nth-of-type(2)
+                top: 50%
+                transform: translate(-50%, 0%) rotate(45deg)
+
+            &:nth-of-type(3)
+                top: 50%
+                transform: translate(-50%, 0%) rotate(-45deg)
+        .header
+            .btn
+                display: none
+            &__link
+                display: none
+    .numbers
+        &_item
+            margin-right: 10px
+        &__title
+            font-size: 48px
+    .check
+        .title
+            text-align: center
+            font-size: 32px
+        .subtitle
+            text-align: center
+        &__content
+            flex-wrap: wrap
+            flex-direction: column-reverse
+            justify-content: center
+    .you
+        margin: 0 auto
+        &__img
+            display: none
+        &__box-items
+            justify-content: right
+    .expert-team
+        &__content
+            justify-content: space-around
+
+@media (max-width: 575px)
+    .center
+        padding-left: calc(50% - 160px)
+        padding-right: calc(50% - 160px)
+    .btn
+        width: 100px
+        height: 30px
+    header
+        .menu-btn
+            margin-right: 10px
+    .top
+        &__logo
+            margin-left: 20px
+        .title
+            font-size: 28px
+        &__content
+            padding-left: 10px
+            .box_img
+                text-align: center
+        .buttons
+            .btn
+                width: 145px
+            flex-direction: column
+            width: 150px
+        &__content
+            flex-direction: column-reverse
+            justify-content: center
+        &__wrapper
+            margin-top: 10px
+            width: 320px
+        &__img
+            width: 80%
+                
+    .logos
+        display: none
+    .solution
+        .title
+            text-align: center
+            font-size: 28px
+        .subtitle
+            text-align: center
+            font-size: 13px
+        &__info
+            width: 320px
+            // text-align: center
+        &__content
+            flex-direction: column-reverse
+            flex-wrap: wrap
+            img
+                width: 100%
+        &__ellipse
+            display: none
+        // button
+    
+    .check
+        &__item
+            width: 100%
+            .title
+                font-size: 24px
+        &__form
+            margin-left: 20px
+            flex-direction: column
+        &__input
+            &_left
+                border-radius: 28px
+                border-right: none
+                margin-bottom: 5px
+                height: 30px
+            &_right
+                border-radius: 28px
+                margin-bottom: 5px
+                height: 30px
+        .btn
+            margin-left: 0
+            width: 140px
+            height: 36px
+    .offers
+        &__wrapper
+            margin: 30px 0px 
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__item
+            display: flex
+            // justify-content: center
+            flex-direction: column
+            align-items: center
+            padding: 10px 6px 18px 10px
+            width: 96%
+            &_square1
+                margin-bottom: 8px
+            &_square2
+                margin-bottom: 8px
+            &_square3
+                margin-bottom: 8px
+    .plans
+        &__content
+            flex-direction: column
+        &__item
+            padding-top: 20px
+            width: 98%
+    .plans
+        padding-top: 24px
+        padding-bottom: 30px
+        &__item
+            padding-top: 10px
+        .btn
+            margin-bottom: 30px
+        &__text
+            line-height: 19px
+        &__price
+            height: 48px
+        &__span2
+            font-size: 38px
+        &__span1
+            font-size: 18px
+    .choose
+        padding: 32px 0 40px 0
+        &__item
+            width: 92%
+        .title
+            font-size: 32px
+        .subtitle
+            font-size: 16px
+            margin-bottom: 25px
+        &__item
+            padding-bottom: 15px
+        &__title
+            padding-top: 25px
+            font-size: 18px
+        &__subtitle
+            padding: 12px 10px 0px 10px
+            font-size: 13px
+        &__btn
+            margin-top: 16px
+    .you
+        &__info
+            width: 94%
+        &__box-items
+            width: 94%
+
+    // .hamburger
+    //     display: block
+    //     position: absolute
+    //     right: 10px
+    //     top: 20px
+    //     // transform: translateY(-50%)
+    //     width: 26px
+    //     height: 12px
+    //     span
+    //         display: block 
+    //         height: 2px
+    //         width: 100%
+    //         background-color: #F25822 
+    //         margin-bottom: 2px
+    //         transition: 0.5s all
+    //     &_active
+    //         span
+    //             margin-bottom: -2px
+    //             &:nth-child(1)
+    //                 transform: translateY(3px) rotate(-45deg)
+    //             &:nth-child(2)
+    //                 display: none
+    //             &:nth-child(3)
+    //                 transform: translateY(3px) rotate(45deg)
