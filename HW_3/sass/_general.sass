@@ -87,7 +87,7 @@
     &__link:hover
         color: #F25822
         transform: scale(1.2)
-    &__link:first-child
+    &__link:first-child()
         color: #F25822
         padding-right: 3px
     &__link:first-child:hover
@@ -97,6 +97,7 @@
         list-style-type: none
         display: flex
         align-items: center
+        color: #000000
 .top
     .menu-btn
         display: none
@@ -533,7 +534,8 @@
         color: #888888
 
 // меню бургер:
-.last
+// .last
+    
     // header
     //     display: flex
     //     justify-content: flex-end
