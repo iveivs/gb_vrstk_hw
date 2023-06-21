@@ -1,0 +1,192 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body
+    padding: 40px
+    background-color: #F1FAEE
+.list
+    &__item:first-child
+        color: red
+    &__item::first-letter
+        font-size: 32px
+        color: red
+    &__item
+        margin-bottom: 10px
+        letter-spacing: 3px
+        cursor: pointer
+        &_new::after
+            content: ' new'
+            color: red
+            font-weight: 700
+    &__item:hover::after
+        content: " <-"
+
+.parent
+    padding-top: 20px
+    width: 200px
+    height: 50px
+    background: #4B8CA6
+.child
+    width: 150px
+    background: #A8DADC
+    text-align: center
+    margin: 0 auto
+
+.parent:hover
+    .child
+        background-color: #666666     
+
+
+.footer
+    &__social
+        margin-top: 20px
+        display: flex 
+        justify-content: space-around
+        &_item
+            width: 31px
+            height: 31px
+            background: #fff
+            text-align: center
+            img
+                padding-top: 7px
+
+.svg-fb
+    padding-top: 40px
+    text-align: center
+.facebook:hover
+    path
+        fill: brown
+
+.button
+    display: block
+    width: 140px
+    height: 40px
+    letter-spacing: 2px
+    // border: 1px solid orange
+    margin-top: 40px
+    font-size: 18px
+    color: #F1FAEE
+    text-align: center
+    padding-top: 10px
+    border-radius: 20px
+    background-color: #203957
+    cursor: pointer
+    transition: all .4s
+.button:hover
+    filter: brightness(180%)
+    
+
+.drive
+    margin-top: 32px
+.drive:hover 
+    .car  
+        margin-left: 1000px
+.car
+    width: 150px
+    height: 50px
+    border: 1px solid #203957
+    transition: margin 2s
+
+.car-1
+    transition-timing-function: ease
+    background-color: #D93B48
+.car-2
+    transition-timing-function: ease-in
+    background-color: #4B8CA6
+.car-3
+    transition-timing-function: ease-out
+    background-color: #F23D5E
+.car-4
+    transition-timing-function: ease-in-out
+    background-color: #203959
+.car-5
+    transition-timing-function: linear
+    background-color: #A7D9D9
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
