@@ -79,17 +79,18 @@
     align-items: center
     &__link
         margin-right: 34px
+        padding: 4px
         color: #000000
         font-size: 14px
         font-weight: regular
         display: inline-block
         transition: .4s
+        &_first
+            color: #F25822
+            font-size: 16px
     &__link:hover
         color: #F25822
         transform: scale(1.2)
-    &__link:first-child()
-        color: #F25822
-        padding-right: 3px
     &__link:first-child:hover
         border-radius: 20px
         box-shadow: 4px 2px 2px #F25822
