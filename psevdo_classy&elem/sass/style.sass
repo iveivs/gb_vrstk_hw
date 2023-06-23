@@ -1,3 +1,77 @@
+
+// @keyframes heartbeat {
+//     from {
+//         -webkit-transform: scale(1)
+//                 transform: scale(1)
+//         -webkit-transform-origin: center center
+//                 transform-origin: center center
+//         -webkit-animation-timing-function: ease-out
+//                 animation-timing-function: ease-out
+//     }
+//     10% {
+//         -webkit-transform: scale(0.91)
+//                 transform: scale(0.91)
+//         -webkit-animation-timing-function: ease-in
+//                 animation-timing-function: ease-in
+//     }
+//     17% {
+//         -webkit-transform: scale(0.98)
+//                 transform: scale(0.98)
+//         -webkit-animation-timing-function: ease-out
+//                 animation-timing-function: ease-out
+//     }
+//     33% {
+//         -webkit-transform: scale(0.87)
+//                 transform: scale(0.87)
+//         -webkit-animation-timing-function: ease-in
+//                 animation-timing-function: ease-in
+//     }
+//     45% {
+//         -webkit-transform: scale(1)
+//                 transform: scale(1)
+//         -webkit-animation-timing-function: ease-out
+//                 animation-timing-function: ease-out
+//     }
+//     }
+// @keyframes heartbeat {
+//     from {
+//         -webkit-transform: scale(1)
+//                 transform: scale(1)
+//         -webkit-transform-origin: center center
+//                 transform-origin: center center
+//         -webkit-animation-timing-function: ease-out
+//                 animation-timing-function: ease-out
+//     }
+//     10% {
+//         -webkit-transform: scale(0.91)
+//                 transform: scale(0.91)
+//         -webkit-animation-timing-function: ease-in
+//                 animation-timing-function: ease-in
+//     }
+//     17% {
+//         -webkit-transform: scale(0.98)
+//                 transform: scale(0.98)
+//         -webkit-animation-timing-function: ease-out
+//                 animation-timing-function: ease-out
+//     }
+//     33% {
+//         -webkit-transform: scale(0.87)
+//                 transform: scale(0.87)
+//         -webkit-animation-timing-function: ease-in
+//                 animation-timing-function: ease-in
+//     }
+//     45% {
+//         -webkit-transform: scale(1)
+//                 transform: scale(1)
+//         -webkit-animation-timing-function: ease-out
+//                 animation-timing-function: ease-out
+//     }
+// }
+
+
+
+
+
 *
     margin: 0
     padding: 0
@@ -73,6 +147,7 @@ body
     background-color: #203957
     cursor: pointer
     transition: all .4s
+    animation: heartbeat 1.5s 5 ease-in-out both
 .button:hover
     filter: brightness(180%)
     
@@ -105,14 +180,66 @@ body
     background-color: #A7D9D9
     
 
+.bord
+    height: 400px
+    display: flex
+    justify-content: center
+    align-items: center
+    &__item
+        transition: 1s
+        width: 200px
+        height: 150px
+        border: 1px solid #000
+        &_1:hover
+            transform: translate(100px, -30px) scale(1.3)
+        &_2:hover
+            transform: translateY(-30px) scale(1.3)
+        &_3:hover
+            transform: translate(-100px, -30px) scale(1.3)
 
 
+.figure
+    position: relative
+    height: 300px
+    display: flex
+    justify-content: center
+    align-items: center
+    &__item
+        position: absolute
+        transition: 1s
+        width: 150px
+        height: 86px
+        border: 1px solid #000
+        &_1
+            transform: rotate(60deg)
+        &_3
+            transform: rotate(-60deg)
 
 
+.figure1
+    position: relative
+    height: 300px
+    display: flex
+    justify-content: center
+    align-items: center
+    &__item
+        position: absolute
+        transition: 1s
+        width: 250px
+        height: 86px
+        border: 1px solid #000
+        &_1
+            transform: rotate(60deg)
+        &_3
+            transform: rotate(-60deg)
 
-
-
-
+.figure2
+    &__item
+        width: 250px
+        height: 86px
+        border: 1px solid #000
+        &_1
+            transform: skew(15deg)
 
 
 
