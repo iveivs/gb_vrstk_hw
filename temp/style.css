@@ -32,7 +32,9 @@
     border: 1px solid #cccccc;
     position: relative;
 }
-
+.prod__obertka {
+    position: relative;
+}
 .prod__img {
     width: 100%;
 }
@@ -49,8 +51,10 @@
 .prod__add-wrapper {
     display: none;
     position: absolute;
-    width: 418px;
-    height: 232px;
+    /* width: 418px; */
+    /* height: 232px; */
+    height: 100%;
+    width: 100%;
     filter: brightness(.8);
     background: rgba(33, 22, 22, 0.7)
 }
